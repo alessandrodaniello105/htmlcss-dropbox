@@ -6,12 +6,22 @@
 
 :root {
   --lightcyan: #B4D0E7;
-  --blubtn: ##0061FF;
+  --bluebtn: #0061FF;
   --grey: #797979;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
+}
+
+button {
+  /* display: inline-block; */
+  background-color: var(--bluebtn);
+  cursor: pointer;
+  width: fit-content;
+  color: white;
+  border: 0;
+  padding: 12px 12px;
 }
 
 
@@ -21,6 +31,15 @@ body {
   display: flex;
 }
 
+.d-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
 .debug {
   background-color: rgba(255, 0, 0, 0.3);
   border: 1px solid black;
@@ -28,13 +47,24 @@ body {
 
 .container {
   width: 98%;
-  margin: 0 auto;
   max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sub-container {
+  width: 98%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .space-between {
   justify-content: space-between;
 }
+
+.space-around {
+  justify-content: space-around;
+}
+
 
 /* HEADER */
 
@@ -75,10 +105,17 @@ header {
 
 /* MAIN */
 
-main {
+.col {
+  padding: 20px;
+}
+
+.main-wrap {
   /* padding-top: 80px; */
   /* transform: translate(0,80px); */
+  flex-direction: column;
 }
+
+/* JUMBOTRON */
 
 .jumbotron-bg {
   background-color: var(--lightcyan);
@@ -91,7 +128,7 @@ main {
   /* text-align: center; */
 }
 
-.titolone {
+.jumbotron .titolone {
   width: 100%;
 }
 
@@ -103,7 +140,6 @@ main {
 }
 
 .jumbotron .col {
-  padding-top: 20px;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
@@ -126,10 +162,73 @@ main {
   /* object-fit: cover; */
 }
 
-.col .go-down-anchor a {
+.jumbotron .col .go-down-anchor a {
   color: black;
 }
 
-.col .go-down-anchor i {
+.jumbotron .col .go-down-anchor i {
   font-size: 3rem;
+}
+
+/* MAIN SECTION */
+
+.main-top {
+  padding: 5px 10px;
+  flex-direction: column;
+}
+
+.main-top .finti-radio {
+  margin: 20px 0;
+}
+
+.main-top h1 {
+  font-size: 2.5rem;
+}
+
+.small-col {
+  flex-basis: calc(100% / 3);
+  flex-shrink: 0;
+  /* height: 100px; */
+  padding: 0 10px;
+}
+
+.active-plan {
+  margin-bottom: 100px;
+}
+
+.partner-box {
+  width: 100%;
+}
+
+
+.partner-box .col:first-child {
+  width: 60%;
+}
+
+.partner-box .col h2 {
+  font-weight: 700;
+}
+
+.partner-box .col:last-child {
+  width: 40%;
+  padding: 30px;
+}
+
+.partner-box .col:last-child p {
+  padding: 20px 0;
+  font-weight: 600;
+}
+
+.partner-box .col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.partner-box .col .white-btn {
+  background-color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  border: 1px solid black;
 }
