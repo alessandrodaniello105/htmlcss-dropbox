@@ -185,6 +185,13 @@ h2.titolone {
   font-size: 3rem;
 }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
 /* MAIN SECTION */
 
 .main-top {
@@ -362,6 +369,11 @@ h2.titolone {
   font-size: 0.9rem;
 }
 
+.hidden-arrow {
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
 .faq-accordion .domandone:hover span.risposta {
   display: block;
 }
@@ -373,10 +385,6 @@ h2.titolone {
 .domandone:hover .hidden-arrow span:last-child {
   display: inline-block;
 } 
-
-.hidden-arrow {
-  position: relative;
-}
 
 .hidden-arrow span:last-child {
   display: none;
