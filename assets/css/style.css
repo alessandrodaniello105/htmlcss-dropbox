@@ -247,12 +247,11 @@ a.anchor {
 
 .partner-box .col:last-child {
   width: 40%;
-  padding: 100px 40px;
+  padding: 100px 50px;
 }
 
 .partner-box .col:last-child p {
   padding: 20px 0;
-  font-weight: 600;
 }
 
 .partner-box .col img {
@@ -261,10 +260,14 @@ a.anchor {
   object-fit: cover;
 }
 
+.partner-box .col:last-child p,
+.partner-box .col .white-btn {
+  font-weight: 400;
+}
+
 .partner-box .col .white-btn {
   background-color: white;
   font-size: 1rem;
-  font-weight: 600;
   color: black;
   border: 1px solid black;
 }
