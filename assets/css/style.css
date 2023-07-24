@@ -36,17 +36,34 @@ header {
 }
 
 .top-bar {
-  position: relative;
+  /* position: relative; */
   width: 98%;
   height: 100%;
   margin: 0 auto;
   align-items: center;
+  justify-content: space-between;
 }
 
-.user-nav {
-  position: absolute;
-  right: 0;
+.top-bar
+
+.top-bar .logo {
+  margin-right: 10px;
 }
+
+
+.top-bar ul {
+  list-style: none;
+}
+
+.web-nav ul li {
+  margin-right: 10px;
+}
+
+.web-nav ul a {
+  text-decoration: none;
+  color: black;
+}
+
 
 
 /* MAIN */
