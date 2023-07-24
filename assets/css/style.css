@@ -148,41 +148,48 @@ h2.titolone {
 }
 
 .jumbotron h1 {
-  padding-top: 100px;
+  padding-top: 85px;
   margin-bottom: 20px;
   font-weight: 800;
   font-size: 5rem;
 }
 
 .jumbotron .col {
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-around;
+  /* flex-wrap: wrap; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
   width: calc(100% / 3);
-}
-
-/* FIXME:image position  */
-.jumbotron .image {
-  position: relative;
-  top: 50px;
-}
-
-.jumbotron .col p {
   font-weight: 600;
 }
 
+.jumbotron .row .col button{
+  margin: 30px 0;
+}
+
+.jumbotron .row .col .go-down-anchor {
+  margin: 50px 0 20px 0;
+}
+
+/* FIXME:image position  */
+
+
+/* .jumbotron .row .magic-img{
+  position: relative;
+} */
+
+
+.jumbotron .row .magic-img .image {
+  position: absolute;
+} 
+
 .jumbotron .image img {
-  width: 100%;
+  width: 800px;
   max-width: 1000px;
   /* object-fit: cover; */
 }
 
 .jumbotron .col .go-down-anchor a {
   color: black;
-}
-
-.jumbotron .col .go-down-anchor i {
-  font-size: 3rem;
 }
 
 a.anchor {
