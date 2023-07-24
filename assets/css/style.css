@@ -67,6 +67,10 @@ button {
   justify-content: space-around;
 }
 
+.space-evenly {
+  justify-content: space-evenly;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -212,7 +216,7 @@ h2.titolone {
 .partecipa,
 .faq-accordion {
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 /* PARTNER BOX SECTION */
@@ -344,19 +348,93 @@ h2.titolone {
 .faq-accordion .domandone {
   padding: 40px 20px 40px 0;
   border-top: 1px solid #999999;
-  font-size: 0.9rem;
   cursor: pointer;
 }
 
 .faq-accordion .domandone div.domanda {
-  font-weight: 700;
+  font-weight: 800;
+  font-size: 1rem;
 }
 
 .faq-accordion .domandone span.risposta {
   display: none;
   padding-top: 20px;
+  font-size: 0.9rem;
 }
 
 .faq-accordion .domandone:hover span.risposta {
   display: block;
 }
+
+
+/* FOOTER */
+
+footer {
+  background-color: black;
+  height: 580px;
+}
+
+footer .footer-top .nav {
+  margin-bottom: 100px;
+}
+
+
+.footer-top .col {
+  width: calc(100% / 6);
+  font-size: 5rem;
+  color: white;
+}
+
+.footer-top ul {
+  /* font-size: 1rem; */
+  list-style: none;
+}
+
+/* NOME NAV */
+.footer-top .nav-parent{
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+}
+
+.footer-top .col li {
+  padding: 8px 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+
+}
+
+.footer-top .col li > a {
+  text-decoration: none;
+  color: white;
+
+}
+
+
+
+.footer-bottom {
+  color: black;
+  font-size: 1rem;
+  /* width: fit-content; */
+  text-align: left;
+  
+}
+
+.footer-bottom span {
+  color: var(--grey);
+  border-top: 1px solid white;
+  padding-top: 40px;
+  padding-right: 40px;
+
+}
+
+/* 
+.footer-bottom:nth-child(3) {
+  color: var(--grey);
+}
+
+.footer-bottom:nth-child(2) span {
+  border-top: 2px solid var(--grey);
+  padding-right: 30px;
+} */
