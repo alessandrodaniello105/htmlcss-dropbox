@@ -366,6 +366,22 @@ h2.titolone {
   display: block;
 }
 
+.domandone:hover .hidden-arrow span:first-child {
+  display: none;
+} 
+
+.domandone:hover .hidden-arrow span:last-child {
+  display: inline-block;
+} 
+
+.hidden-arrow {
+  position: relative;
+}
+
+.hidden-arrow span:last-child {
+  display: none;
+}
+
 
 /* FOOTER */
 
