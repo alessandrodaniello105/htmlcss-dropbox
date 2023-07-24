@@ -8,6 +8,7 @@
   --lightcyan: #B4D0E7;
   --bluebtn: #0061FF;
   --grey: #797979;
+  --lightgrey: #F5F5F5;
 }
 
 body {
@@ -201,11 +202,14 @@ h2.titolone {
 
 .partner-box,
 .info-section,
-.active-plan {
+.active-plan,
+.info-section,
+.our-customer-top {
   width: 100%;
   margin-bottom: 100px;
 }
 
+/* PARTNER BOX SECTION */
 
 .partner-box .col:first-child {
   width: 60%;
@@ -239,11 +243,11 @@ h2.titolone {
   border: 1px solid black;
 }
 
+/* INFO SECTION */
 
 .info-section h2 {
   padding-bottom: 30px;
 }
-
 
 .info-section .row {
   width: 100%;
@@ -252,4 +256,41 @@ h2.titolone {
 
 .small-col {
   flex-basis: calc(100% / 3);
+}
+
+/* OUR CUSTOMER - REVIEWS SECTION */
+
+.our-customer .customer-reviews .square {
+  flex-basis: calc(100% / 3);
+  height: 500px;
+  flex-wrap: wrap;
+}
+
+.brand-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 50%; */
+  width: 50%;
+}
+
+.brand-box img {
+  width: 50%;
+}
+
+.square.reviews {
+  background-color: var(--lightgrey);
+}
+
+.square > div {
+  border: 1px solid black;
+}
+
+
+.partecipa {
+  background-color: var(--lightcyan);
+}
+
+.partecipa-container {
+  padding: 100px 0;
 }
