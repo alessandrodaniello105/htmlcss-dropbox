@@ -260,18 +260,29 @@ h2.titolone {
 
 /* OUR CUSTOMER - REVIEWS SECTION */
 
-.our-customer .customer-reviews .square {
-  flex-basis: calc(100% / 3);
-  height: 500px;
+.our-customer {
+  width: 100%;
+}
+
+.customer-reviews {
+  width: 100%;
+}
+
+.customer-reviews .square {
   flex-wrap: wrap;
+  width: calc(100% / 3);
+  aspect-ratio: 1 / 1;
+
 }
 
 .brand-box {
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   /* height: 50%; */
   width: 50%;
+
 }
 
 .brand-box img {
@@ -280,12 +291,12 @@ h2.titolone {
 
 .square.reviews {
   background-color: var(--lightgrey);
+  overflow-y: auto;
 }
 
 .square > div {
   border: 1px solid black;
 }
-
 
 .partecipa {
   background-color: var(--lightcyan);
