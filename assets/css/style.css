@@ -6,7 +6,7 @@
 
 :root {
   --lightcyan: #B4D0E7;
-  --blubtn: #B4D0E7;
+  --blubtn: ##0061FF;
   --grey: #797979;
 }
 
@@ -26,13 +26,24 @@ body {
   border: 1px solid black;
 }
 
+.container {
+  width: 98%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.space-between {
+  justify-content: space-between;
+}
 
 /* HEADER */
 
 header {
   position: fixed;
+  z-index: 999;
   width: 100%;
   height: 80px;
+  background-color: white;
 }
 
 .top-bar {
@@ -41,33 +52,84 @@ header {
   height: 100%;
   margin: 0 auto;
   align-items: center;
-  justify-content: space-between;
 }
-
-.top-bar
 
 .top-bar .logo {
   margin-right: 10px;
 }
 
-
 .top-bar ul {
   list-style: none;
+}
+
+.top-bar ul a {
+  text-decoration: none;
+  color: black;
 }
 
 .web-nav ul li {
   margin-right: 10px;
 }
 
-.web-nav ul a {
-  text-decoration: none;
-  color: black;
-}
-
 
 
 /* MAIN */
 
+main {
+  /* padding-top: 80px; */
+  /* transform: translate(0,80px); */
+}
+
+.jumbotron-bg {
+  background-color: var(--lightcyan);
+}
+
 .jumbotron {
   padding-top: 80px;
+  flex-direction: column;
+  margin-bottom: 200px;
+  /* text-align: center; */
+}
+
+.titolone {
+  width: 100%;
+}
+
+.jumbotron h1 {
+  padding-top: 100px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 5rem;
+}
+
+.jumbotron .col {
+  padding-top: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  width: calc(100% / 3);
+}
+
+/* FIXME:image position  */
+.jumbotron .image {
+  position: relative;
+  top: 50px;
+}
+
+.jumbotron .col p {
+  font-weight: 600;
+}
+
+.jumbotron .image img {
+  width: 100%;
+  max-width: 1000px;
+  /* object-fit: cover; */
+}
+
+.col .go-down-anchor a {
+  color: black;
+}
+
+.col .go-down-anchor i {
+  font-size: 3rem;
 }
