@@ -209,7 +209,8 @@ h2.titolone {
 .active-plan,
 .info-section,
 .our-customer-top,
-.partecipa {
+.partecipa,
+.faq-accordion {
   width: 100%;
   margin-bottom: 100px;
 }
@@ -327,4 +328,35 @@ h2.titolone {
   width: 100%;
   color: black;
   background-color: white;
+}
+
+
+/* FAQ - ACCORDION SECTION */
+
+.faq-accordion {
+  border-bottom: 1px solid #999999;
+}
+
+.faq-accordion h2 {
+  margin-bottom: 50px;
+}
+
+.faq-accordion .domandone {
+  padding: 40px 20px 40px 0;
+  border-top: 1px solid #999999;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.faq-accordion .domandone div.domanda {
+  font-weight: 700;
+}
+
+.faq-accordion .domandone span.risposta {
+  display: none;
+  padding-top: 20px;
+}
+
+.faq-accordion .domandone:hover span.risposta {
+  display: block;
 }
