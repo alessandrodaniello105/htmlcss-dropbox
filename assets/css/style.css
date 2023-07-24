@@ -9,6 +9,7 @@
   --bluebtn: #0061FF;
   --grey: #797979;
   --lightgrey: #F5F5F5;
+  --partecipacolor: #61082B;
 }
 
 body {
@@ -66,6 +67,9 @@ button {
   justify-content: space-around;
 }
 
+.justify-center {
+  justify-content: center;
+}
 
 /* HEADER */
 
@@ -204,7 +208,8 @@ h2.titolone {
 .info-section,
 .active-plan,
 .info-section,
-.our-customer-top {
+.our-customer-top,
+.partecipa {
   width: 100%;
   margin-bottom: 100px;
 }
@@ -298,10 +303,28 @@ h2.titolone {
   border: 1px solid black;
 }
 
+
+/* PARTECIPA SECTION */
+
 .partecipa {
   background-color: var(--lightcyan);
 }
 
 .partecipa-container {
   padding: 100px 0;
+  color: var(--partecipacolor);
+}
+
+.partecipa-container .col:first-child {
+  width: 50%;
+}
+.partecipa-container .col:last-child {
+  width: 30%;
+  text-align: center;
+}
+
+.special-btn {
+  width: 100%;
+  color: black;
+  background-color: white;
 }
