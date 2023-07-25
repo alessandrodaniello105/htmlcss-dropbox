@@ -356,9 +356,9 @@ a.anchor {
   padding: 10px 0;
 }
 
-.plan-top,
-.plan-middle,
-.plan-bottom {
+.small-col.d-column .plan-top,
+.small-col.d-column .plan-middle,
+.small-col.d-column .plan-bottom {
   padding: 0 20px;
 }
 
@@ -427,12 +427,14 @@ a.anchor {
   color: var(--bluebtn);
 }
 
+/* SPECIAL PLAN ROW */
+
 .special-plan .special-plan-left {
   width: 70%;
 }
 
 .special-plan .special-plan-right {
-  width: 30%;
+  width: 25%;
 }
 
 .special-plan.plan-type {
@@ -445,6 +447,23 @@ a.anchor {
 .special-plan-left > .plan-top {
   border-top: 0;
 }
+
+.small-col.special-plan .special-plan-left p {
+  padding-bottom: 30px;
+}
+
+.special-plan button {
+  width: 100%;
+  margin-top: 25px;
+}
+
+/* 
+.special-plan-left .plan-top,
+.special-plan-left .plan-bottom {
+  padding-left: 30px;
+} */
+
+
 
 /* PARTNER BOX SECTION */
 
@@ -468,7 +487,7 @@ a.anchor {
 .partner-box .col img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .partner-box .col:last-child p,
