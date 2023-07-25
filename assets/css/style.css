@@ -11,6 +11,7 @@
   --lightgrey: #F5F5F5;
   --partecipacolor: #61082B;
   --spaceLink: 45px;
+  --greyTab: #D0D0D3;
 }
 
 body,
@@ -28,6 +29,9 @@ button {
   padding: 8px 15px
 }
 
+.small-col {
+  flex-basis: calc(100% / 3);
+}
 
 /* UTILITIES */
 
@@ -242,6 +246,18 @@ a.anchor {
 
 /* MAIN SECTION */
 
+
+.partner-box,
+.info-section,
+.active-plan,
+.info-section,
+.our-customer-top,
+.partecipa,
+.faq-accordion {
+  width: 100%;
+  margin-bottom: 150px;
+}
+
 .main-top {
   padding: 5px 10px;
   flex-direction: column;
@@ -256,23 +272,13 @@ a.anchor {
 }
 
 .active-plan .small-col {
-  flex-basis: calc(100% / 3);
+  flex-basis: calc(100% / 4);
   flex-shrink: 0;
   /* height: 100px; */
-  padding: 0 10px;
+  min-width: 320px;
+  border: 1px solid var(--greyTab);
 }
 
-
-.partner-box,
-.info-section,
-.active-plan,
-.info-section,
-.our-customer-top,
-.partecipa,
-.faq-accordion {
-  width: 100%;
-  margin-bottom: 150px;
-}
 
 /* ACTIVE PLAN SECTION */
 .finti-radio {
@@ -280,10 +286,10 @@ a.anchor {
   font-weight: 500;
 }
 
-.active-plan .plan-middle ul {
+.active-plan .plan-middle ul,
+.active-plan .plan-bottom > ul {
   list-style-position: inside;
 }
-
 
 /* ECCO I FINTI RADIO BOX */
 .finti-radio .radio-box {
@@ -307,6 +313,36 @@ a.anchor {
 
 .radio-box.active {
   border: 5px solid var(--bluebtn);
+}
+
+.plan-type {
+  align-self: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+/* 
+.line-dont-bother-me {
+  border-bottom: 1px solid grey;
+} */
+
+.plan-top {
+  border-top: 1px solid var(--greyTab);
+}
+
+.plan-top,
+.plan-middle,
+.plan-bottom {
+  padding: 0 20px;
+}
+
+.plan-middle button {
+  width: 100%;
+}
+
+.plan-bottom > ul > li > span {
+  color: var(--bluebtn);
 }
 
 
@@ -358,9 +394,6 @@ a.anchor {
   flex-wrap: wrap;
   justify-content: center;}
 
-.small-col {
-  flex-basis: calc(100% / 3);
-}
 
 /* OUR CUSTOMER - REVIEWS SECTION */
 
