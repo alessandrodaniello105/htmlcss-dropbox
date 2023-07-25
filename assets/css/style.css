@@ -83,6 +83,7 @@ header {
   position: fixed;
   z-index: 999;
   width: 100%;
+  /* min-width: 1150px; */
   height: 80px;
   background-color: white;
   /* border-bottom: 1px solid rgb(214, 214, 214); */
@@ -116,6 +117,10 @@ header {
   list-style: none;
 }
 
+.top-bar ul li {
+  flex-shrink: 0;
+}
+
 .top-bar ul a {
   text-decoration: none;
   color: black;
@@ -146,8 +151,8 @@ header {
 }
 
 
-/* MAIN */
 
+/* JUMBOTRON */
 
 h2.titolone {
   font-size: 2.5rem;
@@ -157,14 +162,6 @@ h2.titolone {
 /* .col {
   padding: 20px;
 } */
-
-.main-wrap {
-  /* padding-top: 80px; */
-  /* transform: translate(0,80px); */
-  flex-direction: column;
-}
-
-/* JUMBOTRON */
 
 .jumbotron-bg {
   background-color: var(--lightcyan);
@@ -235,6 +232,14 @@ a.anchor {
   visibility: hidden;
 }
 
+/* MAIN */
+
+.main-wrap {
+  /* padding-top: 80px; */
+  /* transform: translate(0,80px); */
+  flex-direction: column;
+}
+
 /* MAIN SECTION */
 
 .main-top {
@@ -273,6 +278,10 @@ a.anchor {
 .finti-radio {
   font-size: 0.85rem;
   font-weight: 500;
+}
+
+.active-plan .plan-middle ul {
+  list-style-position: inside;
 }
 
 
