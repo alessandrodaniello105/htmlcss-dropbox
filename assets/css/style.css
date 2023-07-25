@@ -12,6 +12,15 @@
   --partecipacolor: #61082B;
   --spaceLink: 45px;
   --greyTab: #D0D0D3;
+  --bgWhite: #ffffff;
+}
+
+body {
+  background-color: var(--bgWhite);
+}
+
+.fa-li {
+  width: var(--fa-li-width, 2.5em);
 }
 
 body,
@@ -32,6 +41,9 @@ button {
 .small-col {
   flex-basis: calc(100% / 3);
 }
+
+
+
 
 /* UTILITIES */
 
@@ -259,7 +271,7 @@ a.anchor {
 }
 
 .main-top {
-  padding: 5px 10px;
+  padding: 5px;
   flex-direction: column;
 }
 
@@ -271,24 +283,44 @@ a.anchor {
   font-size: 2.5rem;
 }
 
-.active-plan .small-col {
-  flex-basis: calc(100% / 4);
-  flex-shrink: 0;
-  /* height: 100px; */
-  min-width: 320px;
-  border: 1px solid var(--greyTab);
-}
-
 
 /* ACTIVE PLAN SECTION */
-.finti-radio {
-  font-size: 0.85rem;
-  font-weight: 500;
-}
 
 .active-plan .plan-middle ul,
 .active-plan .plan-bottom > ul {
   list-style-position: inside;
+}
+
+.active-plan .row .small-col {
+  flex-basis: calc(100% / 4);
+  flex-shrink: 0;
+  /* height: 100px; */
+  min-width: 300px;
+  border: 1px solid var(--greyTab);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.active-plan .plan-top,
+.active-plan .plan-middle,
+.active-plan .plan-bottom,
+.active-plan .plan-type {
+  font-size: 0.9rem;
+}
+
+.active-plan button {
+  font-size: 0.9rem;
+  padding: 11px;
+  font-weight: 500;
+}
+
+.line-dont-bother-me {
+  height: 100%;
+}
+
+.finti-radio {
+  font-size: 0.85rem;
+  font-weight: 500;
 }
 
 /* ECCO I FINTI RADIO BOX */
@@ -315,20 +347,13 @@ a.anchor {
   border: 5px solid var(--bluebtn);
 }
 
+
+/* CARD ACTIVE PLAN */
+
 .plan-type {
   align-self: center;
-  font-size: 0.9rem;
   font-weight: 600;
   padding: 10px 0;
-}
-
-/* 
-.line-dont-bother-me {
-  border-bottom: 1px solid grey;
-} */
-
-.plan-top {
-  border-top: 1px solid var(--greyTab);
 }
 
 .plan-top,
@@ -337,14 +362,89 @@ a.anchor {
   padding: 0 20px;
 }
 
+.plan-top {
+  border-top: 1px solid var(--greyTab);
+  padding-bottom: 50px;
+}
+
+.plan-top .name-plan-type {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.plan-top .name-plan-type h3 {
+  font-weight: 800;
+}
+
+.plan-top .plan-price {
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+
+.plan-top .payment-method {
+  color: grey;
+  font-weight: 700;
+}
+
+.plan-middle > .fa-ul,
+.plan-bottom > .fa-ul {
+  margin-left: 18px;
+}
+
+.plan-middle > ul {
+  padding-bottom: 40px;
+}
+
+.plan-middle > .fa-ul li,
+.plan-bottom > .fa-ul li {
+  padding-bottom: 15px;
+}
+
 .plan-middle button {
   width: 100%;
 }
 
-.plan-bottom > ul > li > span {
+.plan-middle > span {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.plan-middle .magic-text {
+  text-decoration: underline;
+  text-underline-offset: 40px;
+  text-decoration-color: var(--greyTab);
+  width: fit-content;
+}
+
+.plan-bottom span.btm-title {
+  display: inline-block;
+  padding: 90px 0 30px 8px;
+  font-weight: 800;
+}
+
+.plan-bottom > ul > li > span.fa-li {
   color: var(--bluebtn);
 }
 
+.special-plan .special-plan-left {
+  width: 70%;
+}
+
+.special-plan .special-plan-right {
+  width: 30%;
+}
+
+.special-plan.plan-type {
+  /* display: inline-block; */
+  border: 1px solid var(--greyTab);
+  border-bottom: 0;
+  text-align: center;
+}
+
+.special-plan-left > .plan-top {
+  border-top: 0;
+}
 
 /* PARTNER BOX SECTION */
 
