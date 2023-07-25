@@ -12,7 +12,8 @@
   --partecipacolor: #61082B;
 }
 
-body {
+body,
+button {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -23,7 +24,7 @@ button {
   width: fit-content;
   color: white;
   border: 0;
-  padding: 12px 12px;
+  padding: 10px 12px;
 }
 
 
@@ -343,7 +344,7 @@ a.anchor {
   width: 50%;
 }
 .partecipa-container .col:last-child {
-  width: 30%;
+  width: 25%;
   text-align: center;
 }
 
@@ -351,6 +352,7 @@ a.anchor {
   width: 100%;
   color: black;
   background-color: white;
+  font-size: 0.9rem;
 }
 
 
