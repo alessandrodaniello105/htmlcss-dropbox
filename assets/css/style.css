@@ -334,7 +334,7 @@ a.anchor {
 .active-plan .row.special:hover,
 .active-plan .row .small-col.d-column:hover {
   box-shadow: 0 0 5px rgb(224, 224, 224);
-  scale: 1.02;
+  scale: 1.06;
 }
 
 .active-plan .plan-top,
