@@ -322,6 +322,7 @@ a.anchor {
   transition: 0.5s;
 }
 
+
 .active-plan .row.special:hover,
 .active-plan .row .small-col.d-column:hover {
   box-shadow: 0 0 5px rgb(224, 224, 224);
@@ -561,6 +562,16 @@ a.anchor {
   padding-bottom: 40px;
 }
 
+.info-section .small-col {
+  transition: scale 1.5s, padding 0.5s, box-shadow 1s;
+}
+
+.info-section .small-col:hover  {
+  border: 1px solid var(--greyTab);
+  box-shadow: 0 0 8px rgb(224, 224, 224);
+  scale: 1.1;
+  padding: 10px;
+}
 
 
 /* OUR CUSTOMER - REVIEWS SECTION */
@@ -704,10 +715,14 @@ a.anchor {
 }
 
 .faq-accordion .domandone {
-  padding: 40px 20px 40px 0;
+  /* padding: 40px 20px 40px 0; */
+  padding-right: 20px;
+  /* height: 100px; */
   border-top: 1px solid #999999;
   cursor: pointer;
   transition: 1s;
+  justify-content: center;
+  
 }
 
 .faq-accordion .domandone div.domanda {
@@ -723,9 +738,14 @@ a.anchor {
 .faq-accordion .domandone .container-risposta {
   visibility: hidden;
   opacity: 0;
+  /* height: 0; */
 
-  position: absolute;
+  /* position: absolute; */
   /* display: none; */
+}
+
+.faq-accordion .domandone:hover {
+  height: 200px;
 }
 
 .faq-accordion .domandone:hover .container-risposta {
@@ -830,3 +850,45 @@ footer .footer-top .nav {
   border-top: 2px solid var(--grey);
   padding-right: 30px;
 } */
+
+
+
+
+
+
+
+
+
+.cont {
+  height: 80px;
+  overflow: hidden;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.a {
+  flex-basis: 80px;
+  align-items: center;
+  padding-top: 30px;
+  font-weight: 800;
+  font-size: 1rem;
+  padding-right: 20px;
+  border-top: 1px solid #999999;
+
+}
+
+.b {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: 2s;
+}
+
+.cont:hover {
+  height: 135px;
+}
+
+.cont:hover .b {
+  opacity: 1;
+}
