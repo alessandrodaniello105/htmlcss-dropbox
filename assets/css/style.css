@@ -765,6 +765,10 @@ footer .footer-top .nav {
 
 }
 
+.footer-top .col li > a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
 
 
 .footer-bottom {
