@@ -43,6 +43,11 @@ body,
   padding: 13px 15px
 }
 
+.button a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .small-col {
   flex-basis: calc(100% / 3);
 }
@@ -269,7 +274,7 @@ a.anchor {
 .partecipa,
 .faq-accordion {
   width: 100%;
-  margin-bottom: 150px;
+  margin-bottom: 110px;
   /* min-width: 1010px; fix page stretching when tighten  */
 }
 
@@ -307,10 +312,20 @@ a.anchor {
   font-weight: 600;
 }
 
-
 .active-plan .row .small-col {
   border: 1px solid var(--greyTab);
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+.active-plan .row .small-col,
+.active-plan .row.special {
+  transition: 0.5s;
+}
+
+.active-plan .row.special:hover,
+.active-plan .row .small-col.d-column:hover {
+  box-shadow: 0 0 5px rgb(224, 224, 224);
+  scale: 1.02;
 }
 
 .active-plan .plan-top,
@@ -542,6 +557,12 @@ a.anchor {
   margin-bottom: 60px;
 }
 
+.info-section .text-box > h2 {
+  padding-bottom: 40px;
+}
+
+
+
 /* OUR CUSTOMER - REVIEWS SECTION */
 
 .our-customer {
@@ -686,6 +707,7 @@ a.anchor {
   padding: 40px 20px 40px 0;
   border-top: 1px solid #999999;
   cursor: pointer;
+  transition: 1s;
 }
 
 .faq-accordion .domandone div.domanda {
@@ -693,19 +715,25 @@ a.anchor {
   font-size: 1rem;
 }
 
-.faq-accordion .domandone span.risposta {
-  display: none;
+.faq-accordion .domandone .container-risposta {
   padding-top: 20px;
   font-size: 0.9rem;
 }
 
-.hidden-arrow {
-  font-size: 0.8rem;
-  font-weight: bolder;
+.faq-accordion .domandone .container-risposta {
+  visibility: hidden;
+  opacity: 0;
+
+  position: absolute;
+  /* display: none; */
 }
 
-.faq-accordion .domandone:hover span.risposta {
-  display: block;
+.faq-accordion .domandone:hover .container-risposta {
+  position: static;
+  /* display: block; */
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s;
 }
 
 .domandone:hover .hidden-arrow span:first-child {
@@ -715,6 +743,11 @@ a.anchor {
 .domandone:hover .hidden-arrow span:last-child {
   display: inline-block;
 } 
+
+.hidden-arrow {
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
 
 .hidden-arrow span:last-child {
   display: none;
