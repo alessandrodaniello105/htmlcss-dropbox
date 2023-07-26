@@ -15,35 +15,32 @@
   --bgWhite: #ffffff;
 }
 
-html {
-  min-width: 1130px !important;
-}
 
 body {
   background-color: var(--bgWhite);
 }
-
+/* 
 main {
   width: 100%;
-}
+} */
 
 .fa-li {
   width: var(--fa-li-width, 2.5em);
 }
 
 body,
-button {
+.button {
   font-family: 'Open Sans', sans-serif;
 }
 
-button {
-  /* display: inline-block; */
+.button {
+  display: inline-block;
   background-color: var(--bluebtn);
   cursor: pointer;
   width: fit-content;
   color: white;
   border: 0;
-  padding: 8px 15px
+  padding: 13px 15px
 }
 
 .small-col {
@@ -51,6 +48,10 @@ button {
 }
 
 
+.button.min {
+  margin-left: 20px;
+  padding: 8px 15px;
+}
 
 
 /* UTILITIES */
@@ -164,12 +165,6 @@ header {
   margin-left: var(--spaceLink);
 }
 
-.user-nav button {
-  margin-left: 20px;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
 
 /* JUMBOTRON */
 
@@ -184,7 +179,7 @@ h2.titolone {
 
 .jumbotron-bg {
   background-color: var(--lightcyan);
-  min-width: 1010px;  /* fix page stretching when tighten */ 
+  /* min-width: 1010px;  fix page stretching when tighten  */
 }
 
 .jumbotron {
@@ -213,9 +208,9 @@ h2.titolone {
   font-weight: 600;
 }
 
-.jumbotron .row .col button{
+.jumbotron .row .col .button{
   margin: 30px 0;
-  padding: 12px 15px;
+  /* padding: 12px 15px; */
   font-size: 1rem;
   font-weight: 500;
 }
@@ -275,7 +270,7 @@ a.anchor {
 .faq-accordion {
   width: 100%;
   margin-bottom: 150px;
-  min-width: 1010px; /* fix page stretching when tighten */ 
+  /* min-width: 1010px; fix page stretching when tighten  */
 }
 
 .main-top {
@@ -292,6 +287,11 @@ a.anchor {
 
 
 /* ACTIVE PLAN SECTION */
+
+.button.special {
+  width: 100%;
+  text-align: center;
+}
 
 .active-plan .plan-middle ul,
 .active-plan .plan-bottom > ul {
@@ -320,7 +320,7 @@ a.anchor {
   font-size: 0.9rem;
 }
 
-.active-plan button {
+.active-plan .button {
   font-size: 0.9rem;
   padding: 11px;
   font-weight: 500;
@@ -415,10 +415,10 @@ a.anchor {
 .plan-bottom > .fa-ul li {
   padding-bottom: 15px;
 }
-
-.plan-middle button {
+/* 
+.plan-middle .button {
   width: 100%;
-}
+} */
 
 .plan-middle > span {
   display: inline-block;
@@ -471,8 +471,8 @@ a.anchor {
   padding-bottom: 30px;
 }
 
-.special-plan button {
-  width: 100%;
+.special-plan .button {
+  /* width: 100%; */
   margin-top: 25px;
 }
 
@@ -511,6 +511,7 @@ a.anchor {
   font-size: 1rem;
   color: black;
   border: 1px solid black;
+  padding: 10px 15px;
 }
 
 
