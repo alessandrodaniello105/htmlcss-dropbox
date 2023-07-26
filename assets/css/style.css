@@ -7,6 +7,7 @@
 :root {
   --lightcyan: #B4D0E7;
   --bluebtn: #0061FF;
+  --bluebtnHover: #004fcf;
   --grey: #797979;
   --lightgrey: #F5F5F5;
   --partecipacolor: #61082B;
@@ -47,6 +48,18 @@ body,
   padding: 12px 15px
 }
 
+.special-btn {
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.button.blue:hover {
+  background-color: var(--bluebtnHover);
+}
+
+.special-btn a,
 .button a {
   text-decoration: none;
   color: inherit;
@@ -59,7 +72,7 @@ body,
 
 .button.min {
   margin-left: 20px;
-  padding: 8px 15px;
+  padding: 7px 14px;
 }
 
 
@@ -499,6 +512,13 @@ a.anchor {
   /* width: 100%; */
   margin-top: 25px;
 }
+
+/* 
+.active-plan .row .small-col .plan-middle .button.special a::after {
+  content: '\2192';
+} */
+
+
 
 /* PARTNER BOX SECTION */
 
