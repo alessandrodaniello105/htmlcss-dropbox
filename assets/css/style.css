@@ -616,9 +616,15 @@ a.anchor {
   cursor: pointer;
 }
 
+.brand-box svg,
 .brand-box img {
   width: 50%;
-  filter: invert(1);
+  /* filter: invert(1); */
+  fill: white;
+}
+
+.customer-reviews .square:first-child div:nth-child(3) svg {
+  width: 61%;
 }
 
 .square.reviews {
