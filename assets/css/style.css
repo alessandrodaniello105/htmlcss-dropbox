@@ -15,6 +15,10 @@
   --bgWhite: #ffffff;
 }
 
+html {
+  min-width: 1130px !important;
+}
+
 body {
   background-color: var(--bgWhite);
 }
@@ -103,7 +107,7 @@ header {
   position: fixed;
   z-index: 999;
   width: 100%;
-  /* min-width: 1150px; */
+  min-width: 1130px;
   height: 80px;
   background-color: white;
   /* border-bottom: 1px solid rgb(214, 214, 214); */
@@ -180,6 +184,7 @@ h2.titolone {
 
 .jumbotron-bg {
   background-color: var(--lightcyan);
+  min-width: 1010px;  /* fix page stretching when tighten */ 
 }
 
 .jumbotron {
@@ -270,6 +275,7 @@ a.anchor {
 .faq-accordion {
   width: 100%;
   margin-bottom: 150px;
+  min-width: 1010px; /* fix page stretching when tighten */ 
 }
 
 .main-top {
@@ -630,7 +636,10 @@ a.anchor {
   box-shadow: inset 0 0 0 15px rgba(255, 255, 255, 0.6);
 }
 
-
+/* a {
+  text-decoration: none;
+  color: black;
+} */
 
 
 /* PARTECIPA SECTION */
@@ -650,7 +659,6 @@ a.anchor {
 }
 .partecipa-container .col:last-child {
   width: 25%;
-  text-align: center;
 }
 
 .special-btn {
@@ -658,6 +666,7 @@ a.anchor {
   color: black;
   background-color: white;
   font-size: 0.9rem;
+  padding: 10px 15px;
 }
 
 
